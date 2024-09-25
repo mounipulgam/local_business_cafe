@@ -8,7 +8,7 @@
 /* Body and Container */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('pexels-lukebarky-2899719.jpg'); /* Include the image as the background */
+    background-image: url('Images/pexels-lukebarky-2899719.jpg'); /* Include the image as the background */
     background-size: cover; /* Ensure the image covers the entire page */
     background-repeat: no-repeat; /* Prevent the background from repeating */
     background-attachment: fixed; /* Keeps the background fixed during scrolling */

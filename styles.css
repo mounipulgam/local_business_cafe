@@ -8,7 +8,7 @@
 /* Body and Container */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('Images/pexels-lukebarky-2899719.jpg'); /* Include the image as the background */
+    background-image: url('pexels-lukebarky-2899719.jpg'); /* Include the image as the background */
     background-size: cover; /* Ensure the image covers the entire page */
     background-repeat: no-repeat; /* Prevent the background from repeating */
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
@@ -83,7 +83,7 @@ header nav ul li a:hover {
     position: relative; /* Position relative for z-index */
     z-index: 1; /* Ensure it is above the background */
     border-radius: 10px;  
-    min-height: 100vh; /* Make sure it covers the full viewport height */
+    min-height: 100vh; /* Makes sure it covers the full viewport height */
     display: flex; /* Flexbox for centering content */
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
@@ -280,6 +280,10 @@ footer p {
     header nav ul li {
         margin: 0 10px; /* Reduce spacing between nav items */
     }
+    .menu-item {
+        width: 45%; /* Two items per row */
+        margin-bottom: 20px; /* Adjust spacing */
+    }
 }
 
 /* For Tablets and Large Mobile Devices */
@@ -315,6 +319,11 @@ footer p {
     }
     .menu-item {
         width: 100%; /* Full width for menu items */
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+    .menu-grid {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
     }
     #contact-form {
         width: 90%; /* Expand contact form */
@@ -342,5 +351,19 @@ footer p {
     .btn {
         padding: 8px 16px; /* Adjust button padding */
         font-size: 14px; /* Smaller button font size */
+    }
+    .menu-item {
+        width: 100%; /* Full width for each item */
+        margin-bottom: 15px; /* Reduce spacing */
+    }
+    .menu-item img {
+        width: 100%; /* Adjust image width */
+        border-radius: 5px; /* Reduce corner radius */
+    }
+    .menu-item h3 {
+        font-size: 20px; /* Adjust font size */
+    }
+    .menu-item p {
+        font-size: 14px; /* Adjust paragraph size */
     }
 }

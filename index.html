@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            
+            <div class="hero-text">
+                
+                <h1>Welcome to Local Business Cafe</h1>
+                <p>Your cozy corner for delicious coffee and snacks.</p>
+                <a href="#menu" class="btn">View Menu</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>
+                    I have always been passionate about technology and problem-solving. After completing my Master's degree in Digital Systems Engineering, I discovered my love for building things, whether it's designing digital systems or creating delightful experiences for our customers.
+                </p>
+                <p>
+                    Currently, I am expanding my skill set by learning web development technologies such as HTML, CSS, and JavaScript. This journey helps me enhance our cafe's online presence and improve how we connect with our community. I believe that just as every great dish has the right ingredients, every successful business needs the right mix of innovation and passion.
+                </p>
+                <p>
+                    At Local Business Cafe, we combine a passion for quality coffee and food with a dedication to community and learning. We aim to offer not just great products but also a space where everyone feels welcome and inspired.
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <button class="category-btn" data-category="coffee">Coffee</button>
+                <button class="category-btn" data-category="snacks">Snacks</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Handlebars template for menu items -->
+            
+            </div>
+        </section>
+
+        <script id="menu-template" type="text/x-handlebars-template">
+            {{#each items}}
+            <div class="menu-item">
+                <img src="{{image}}" alt="{{name}}">
+                <h3>{{name}}</h3>
+                <p>{{description}}</p>
+                <p>Price: £{{price}}</p>
+            </div>
+            {{/each}}
+        </script>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Address: 123 Main Street, City, Country</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: info@localbusinesscafe.com</p>
+            <form id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Local Business Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
